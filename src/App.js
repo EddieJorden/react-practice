@@ -1,14 +1,24 @@
 import './App.css';
 import Button from '../src/components/button/button'
-function App() {
+import Greeting from '../src/components/Greeting/Greeting'
+const App = ({ greeting }) => {
+  const onClick = () => {
+    console.log('click')
+  }
   return (
     <div>
       <div className="App">
-      Hello World.tech      
-    </div>
-      <Button />
+        <Greeting text= {greeting}/>
+      </div>
+      <Button color='green' text='click sahdud' onClick={onClick}/>
     </div>
   );
 }
+
+App.defaultProps = {
+  greeting: 'Hello from eddie@eddieJorden.tech'
+}
+
+
 
 export default App;

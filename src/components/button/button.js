@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 
-class Button extends React.Component {
-    render() {
+const Button = ({ color, text, onClick }) => {
+
+
         return (
-            <button>
-                click this button
+            <button
+                onClick={onClick}
+                className='btn'
+                style={{ backgroundColor: color }}
+            >
+                {text}
             </button>
         )
-    }
+
 }
 
 ReactDOM.render(<Button />, document.getElementById('root'))
