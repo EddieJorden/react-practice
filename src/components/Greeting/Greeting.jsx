@@ -1,10 +1,16 @@
 
-const Greeting = (greeting) => {
+const Greeting = ({text, lineTwo}) => {
+    
     return (
         <h1>
-            {greeting}
+            <h1>{text}</h1>
+            <h2>{lineTwo}</h2>
         </h1>
     )
+
 }
+
+
+
 
 export default Greeting

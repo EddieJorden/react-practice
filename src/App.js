@@ -1,23 +1,21 @@
 import './App.css';
 import Button from '../src/components/button/button'
 import Greeting from '../src/components/Greeting/Greeting'
-const App = ({ greeting }) => {
-  const onClick = () => {
-    console.log('click')
-  }
+
+
+const App = () => {
+
   return (
     <div>
       <div className="App">
-        <Greeting text= {greeting}/>
+        <Greeting text="some nice text" lineTwo="second line of some text"/>
       </div>
-      <Button color='green' text='click sahdud' onClick={onClick}/>
+        <Button text="button text" color="green"/>
     </div>
   );
 }
 
-App.defaultProps = {
-  greeting: 'Hello from eddie@eddieJorden.tech'
-}
+
 
 
 

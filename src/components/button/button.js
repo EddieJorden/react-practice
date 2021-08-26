@@ -8,7 +8,7 @@ const Button = ({ color, text, onClick }) => {
             <button
                 onClick={onClick}
                 className='btn'
-                style={{ backgroundColor: color }}
+                style={{ backgroundColor: color, width: '100px', height: '64px' }}
             >
                 {text}
             </button>
