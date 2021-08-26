@@ -10,7 +10,7 @@ const App = () => {
       <div className="App">
         <Greeting text="some nice text" lineTwo="second line of some text"/>
       </div>
-        <Button text="button text" color="green"/>
+        <Button text="button text" color="green" />
     </div>
   );
 }
