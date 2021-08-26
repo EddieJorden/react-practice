@@ -5,12 +5,18 @@ import Image from './components/Image/Image'
 
 
 const App = () => {
+  
+  
+  const onClick = () => {
+   
+  
+  }
 
   return (
       <div className="App">
-        <Heading text="some nice text" lineTwo="second line of some text" lineFour="fourth line of some text"/>
-        <Button text="button text" color="green" textColor="white"/>
-        <Image altText="alt text test"/>
+        <Heading text="some nice text" />
+        <Button text="Click Here" color="rgb(237, 91, 43)" textColor="azure" onClick={onClick} boldFont='bold' fontSize='20px'/>
+        <Image altText="alt text test" width="100%"/>
       </div>
   );
 }

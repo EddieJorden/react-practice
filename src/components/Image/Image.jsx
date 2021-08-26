@@ -7,7 +7,7 @@ const Image = (props) => {
     
     return(
         <div>
-            <img src={image} alt={props.altText}/>
+            <img src={image} alt={props.altText} width={props.width}/>
         </div>
     )
 }
