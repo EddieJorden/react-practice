@@ -1,17 +1,17 @@
 import './App.css';
 import Button from '../src/components/button/button'
-import Greeting from '../src/components/Greeting/Greeting'
+import Heading from './components/Heading/Heading'
+import Image from './components/Image/Image'
 
 
 const App = () => {
 
   return (
-    <div>
       <div className="App">
-        <Greeting text="some nice text" lineTwo="second line of some text"/>
+        <Heading text="some nice text" lineTwo="second line of some text" lineFour="fourth line of some text"/>
+        <Button text="button text" color="green" textColor="white"/>
+        <Image altText="alt text test"/>
       </div>
-        <Button text="button text" color="green" />
-    </div>
   );
 }
 

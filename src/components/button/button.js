@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 
-const Button = ({ color, text, onClick }) => {
+const Button = ({ color, text, onClick, textColor }) => {
 
 
         return (
             <button
                 onClick={onClick}
                 className='btn'
-                style={{ backgroundColor: color, width: '100px', height: '64px' }}
+                style={{ backgroundColor: color, color: textColor, width: '100px', height: '64px' }}
             >
                 {text}
             </button>
