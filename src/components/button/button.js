@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom'
 
 const Button = ({ color, text, onClick, textColor, boldFont, fontSize }) => {
 
@@ -9,7 +9,16 @@ const Button = ({ color, text, onClick, textColor, boldFont, fontSize }) => {
             <button
                 onClick={onClick}
                 className='btn'
-                style={{ backgroundColor: color, color: textColor, width: '100px', height: '64px', fontWeight: boldFont, fontSize: fontSize, borderRadius: '10px', marginBottom: '1rem' }}
+                style={{ 
+                    backgroundColor: color,
+                    color: textColor,
+                    width: '100px',
+                    height: '64px',
+                    fontWeight: boldFont,
+                    fontSize: fontSize,
+                    borderRadius: '10px',
+                    marginBottom: '1rem' 
+                }}
             >
                 {text}
             </button>
@@ -17,6 +26,6 @@ const Button = ({ color, text, onClick, textColor, boldFont, fontSize }) => {
 
 }
 
-ReactDOM.render(<Button />, document.getElementById('root'))
+// ReactDOM.render(<Button />, document.getElementById('root'))
 
 export default Button

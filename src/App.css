@@ -1,8 +1,20 @@
 .App {
-  text-align: center;
-  display: inline-block;
+  text-align: left;
+  /* display: inline-block; */
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
   background-color:#282c34;
   color:azure;
+  background-image: url(../src/components/Image/24h-2019-Porsche-Nr911-Foto-GruppeC-ADAC.jpeg) ;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  height: 100%;
 }
 
 .App-logo {
