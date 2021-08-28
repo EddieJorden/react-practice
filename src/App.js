@@ -8,8 +8,8 @@ import Heading from './components/Heading/Heading'
 const App = () => {
   
   
-  const onClick = () => {
-   
+  const onClick = (e) => {
+    console.log(e)
   
   }
 
